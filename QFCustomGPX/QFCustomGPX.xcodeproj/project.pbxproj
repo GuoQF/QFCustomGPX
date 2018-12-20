@@ -13,6 +13,9 @@
 		1032253421C74F13000AE0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1032253321C74F13000AE0F0 /* Assets.xcassets */; };
 		1032253721C74F13000AE0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1032253521C74F13000AE0F0 /* LaunchScreen.storyboard */; };
 		1032253A21C74F13000AE0F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1032253921C74F13000AE0F0 /* main.m */; };
+		1032254521C74F2A000AE0F0 /* LocationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1032254121C74F2A000AE0F0 /* LocationHelper.m */; };
+		1032254621C74F2A000AE0F0 /* QFLocation.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1032254321C74F2A000AE0F0 /* QFLocation.gpx */; };
+		1032254721C74F2A000AE0F0 /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = 1032254421C74F2A000AE0F0 /* WGS84TOGCJ02.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		1032253621C74F13000AE0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1032253821C74F13000AE0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1032253921C74F13000AE0F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1032254021C74F2A000AE0F0 /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
+		1032254121C74F2A000AE0F0 /* LocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHelper.m; sourceTree = "<group>"; };
+		1032254221C74F2A000AE0F0 /* LocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHelper.h; sourceTree = "<group>"; };
+		1032254321C74F2A000AE0F0 /* QFLocation.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = QFLocation.gpx; sourceTree = "<group>"; };
+		1032254421C74F2A000AE0F0 /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 				1032252B21C74F13000AE0F0 /* AppDelegate.m */,
 				1032252D21C74F13000AE0F0 /* ViewController.h */,
 				1032252E21C74F13000AE0F0 /* ViewController.m */,
+				1032254821C74F31000AE0F0 /* LocationHelp */,
 				1032253021C74F13000AE0F0 /* Main.storyboard */,
 				1032253321C74F13000AE0F0 /* Assets.xcassets */,
 				1032253521C74F13000AE0F0 /* LaunchScreen.storyboard */,
@@ -69,6 +78,18 @@
 				1032253921C74F13000AE0F0 /* main.m */,
 			);
 			path = QFCustomGPX;
+			sourceTree = "<group>";
+		};
+		1032254821C74F31000AE0F0 /* LocationHelp */ = {
+			isa = PBXGroup;
+			children = (
+				1032254221C74F2A000AE0F0 /* LocationHelper.h */,
+				1032254121C74F2A000AE0F0 /* LocationHelper.m */,
+				1032254021C74F2A000AE0F0 /* WGS84TOGCJ02.h */,
+				1032254421C74F2A000AE0F0 /* WGS84TOGCJ02.m */,
+				1032254321C74F2A000AE0F0 /* QFLocation.gpx */,
+			);
+			path = LocationHelp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +152,7 @@
 				1032253721C74F13000AE0F0 /* LaunchScreen.storyboard in Resources */,
 				1032253421C74F13000AE0F0 /* Assets.xcassets in Resources */,
 				1032253221C74F13000AE0F0 /* Main.storyboard in Resources */,
+				1032254621C74F2A000AE0F0 /* QFLocation.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1032254521C74F2A000AE0F0 /* LocationHelper.m in Sources */,
+				1032254721C74F2A000AE0F0 /* WGS84TOGCJ02.m in Sources */,
 				1032252F21C74F13000AE0F0 /* ViewController.m in Sources */,
 				1032253A21C74F13000AE0F0 /* main.m in Sources */,
 				1032252C21C74F13000AE0F0 /* AppDelegate.m in Sources */,
@@ -288,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9R5469FYB;
 				INFOPLIST_FILE = QFCustomGPX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9R5469FYB;
 				INFOPLIST_FILE = QFCustomGPX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
